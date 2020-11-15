@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Inscripcion
+comment0.text=\r\n\ Escriba\ en\ lenguaje\ natural\ una\ descripci\u00F3n\ de\ los\ objetos\r\n\ que\ caben\ en\ el\ concepto\ de\ la\ clase\ Inscripcion.\r\n\ \r\n\ @author\ (Milton\ Jes\u00FAs\ Vera\ Contreras\ -\ miltonjesusvc@ufps.edu.co)\ \r\n\ @version\ Math.sin(Math.PI-Double.MIN_VALUE)\ \:)\ \r\n
+comment1.params=alumno\ materia
+comment1.target=Inscripcion(Alumno,\ Materia)
+comment2.params=
+comment2.target=Alumno\ getAlumno()
+comment2.text=Metodo\ de\ acceso\ a\ la\ propiedad\ alumno
+comment3.params=
+comment3.target=Materia\ getMateria()
+comment4.params=
+comment4.target=java.lang.String\ getNombresAlumno()
+comment5.params=
+comment5.target=java.lang.String\ getNombreDeLaMateria()
+comment6.params=other
+comment6.target=boolean\ equals(java.lang.Object)
+comment6.text=Compara\ el\ Materia\ y\ alumno\ de\ this\ con\ el\ Materia\ y\ Alumno\ de\ other
+numComments=7

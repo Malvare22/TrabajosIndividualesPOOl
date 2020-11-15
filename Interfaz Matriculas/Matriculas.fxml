@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerUniversidad">
+   <children>
+      <Text layoutX="6.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PreMatriculas UFPS" wrappingWidth="348.51720428466797">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <TabPane layoutY="73.0" prefHeight="526.0" prefWidth="474.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Materias">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="496.0" prefWidth="458.0">
+                     <children>
+                        <Label layoutX="4.0" layoutY="14.0" prefHeight="3.0" prefWidth="156.0" text="Nombre">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="4.0" layoutY="41.0" prefHeight="13.0" prefWidth="251.0" text="Maximo de Alumnos por Grupo">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtMateriasMaximoAlumosPorGrupo" layoutX="262.0" layoutY="41.0" prefHeight="26.0" prefWidth="210.0" />
+                        <TextField fx:id="txtMateriasNombre" layoutX="262.0" layoutY="15.0" prefHeight="26.0" prefWidth="210.0" />
+                        <Button fx:id="cmdMateriasAgregarMateria" layoutY="67.0" mnemonicParsing="false" onAction="#materiasAgregarMateria" prefHeight="26.0" prefWidth="237.0" text="Agregar Materia">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="cmdMateriasLimpiar" layoutX="237.0" layoutY="67.0" mnemonicParsing="false" onAction="#materiasLimpiar" prefHeight="26.0" prefWidth="237.0" text="Limpiar">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <TableView fx:id="tblMaterias" layoutY="93.0" prefHeight="402.0" prefWidth="474.0">
+                          <columns>
+                            <TableColumn fx:id="colMateriasMateria" prefWidth="236.00000303983688" text="Materia" />
+                            <TableColumn fx:id="colMateriasMaximoAlumnos" prefWidth="238.40000915527344" text="Maximo de Alumnos por Grupo" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Alumnos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="6.0" layoutY="13.0" prefHeight="26.0" prefWidth="234.0" text="Codigo">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtAlumnosPromedio" layoutX="240.0" layoutY="116.0" prefHeight="26.0" prefWidth="232.0" />
+                        <Label layoutX="6.0" layoutY="39.0" prefHeight="26.0" prefWidth="234.0" text="Nombres">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="65.0" prefHeight="26.0" prefWidth="233.0" text="Apellidos">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="91.0" prefHeight="26.0" prefWidth="234.0" text="Edad">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="117.0" prefHeight="26.0" prefWidth="233.0" text="Promedio">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="cmdAlumnosAgregarAlumno" layoutY="143.0" mnemonicParsing="false" onAction="#alumnosAgregarAlumno" prefHeight="26.0" prefWidth="241.0" text="Agregar Alumno">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="cmdAlumnosLimpiar" layoutX="241.0" layoutY="143.0" mnemonicParsing="false" onAction="#alumnosLimpiar" prefHeight="26.0" prefWidth="233.0" text="Limpiar">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtAlumnosCodigo" layoutX="240.0" layoutY="12.0" prefHeight="26.0" prefWidth="232.0" />
+                        <TextField fx:id="txtAlumnosNombres" layoutX="240.0" layoutY="38.0" prefHeight="26.0" prefWidth="232.0" />
+                        <TextField fx:id="txtAlumnosApellidos" layoutX="240.0" layoutY="65.0" prefHeight="26.0" prefWidth="232.0" />
+                        <TextField fx:id="txtAlumnosEdad" layoutX="240.0" layoutY="91.0" prefHeight="26.0" prefWidth="232.0" />
+                        <TableView fx:id="tblAlumnos" layoutY="170.0" prefHeight="326.0" prefWidth="474.0">
+                          <columns>
+                            <TableColumn fx:id="colAlumnosCodigo" prefWidth="89.59997862577438" text="Codigo" />
+                            <TableColumn fx:id="colAlumnosNombre" prefWidth="102.4000244140625" text="Nombres" />
+                              <TableColumn fx:id="colAlumnosApellidos" prefWidth="92.79997253417969" text="Apellidos" />
+                              <TableColumn fx:id="colAlumnosEdad" minWidth="4.0" prefWidth="87.20001220703125" text="Edad" />
+                              <TableColumn fx:id="colAlumnosPromedio" minWidth="0.0" prefWidth="102.4000244140625" text="Promedio" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Inscripciones">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtInscripcionesNumeroDeAlumno" layoutX="233.0" layoutY="40.0" prefHeight="26.0" prefWidth="240.0" />
+                        <Label layoutX="6.0" layoutY="14.0" prefHeight="26.0" prefWidth="234.0" text="Materia">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="40.0" prefHeight="26.0" prefWidth="234.0" text="Numero de Alumno">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="cmbInscripcionesMateria" layoutX="233.0" layoutY="15.0" onAction="#inscripcionesSeleccionMateria" prefHeight="26.0" prefWidth="241.0" />
+                        <Button fx:id="cmdInscripcionesLimpiar" layoutX="232.0" layoutY="66.0" mnemonicParsing="false" onAction="#inscripcionesLimpiar" prefHeight="26.0" prefWidth="241.0" text="Limpiar">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="cmdInscripcionesInscribir" layoutY="66.0" mnemonicParsing="false" onAction="#inscripcionesInscribir" prefHeight="26.0" prefWidth="233.0" text="Inscribir">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <TableView fx:id="tblInscripciones" layoutY="92.0" prefHeight="404.0" prefWidth="474.0">
+                          <columns>
+                            <TableColumn fx:id="colInscripcionesAlumno" prefWidth="232.00000303983688" text="Alumno" />
+                            <TableColumn fx:id="colInscripcionesMateria" prefWidth="241.59996032714844" text="Materia" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Grupos">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="6.0" layoutY="14.0" prefHeight="26.0" prefWidth="234.0" text="Materia">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="40.0" prefHeight="26.0" prefWidth="234.0" text="Grupo">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="cmbGruposMateria" layoutX="232.0" layoutY="14.0" onAction="#gruposSeleccionarMateria" prefHeight="26.0" prefWidth="241.0" />
+                        <ComboBox fx:id="cmbGruposGrupo" layoutX="232.0" layoutY="40.0" onAction="#gruposSeleccionarGrupo" prefHeight="26.0" prefWidth="241.0" />
+                        <Button fx:id="cmdGruposGenerarGrupo" layoutX="232.0" layoutY="66.0" mnemonicParsing="false" onAction="#gruposGenerarGrupo" prefHeight="26.0" prefWidth="241.0" text="Generar Grupos">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <TableView fx:id="tblGrupos" layoutY="93.0" prefHeight="406.0" prefWidth="474.0">
+                          <columns>
+                            <TableColumn fx:id="colGruposCodigo" prefWidth="162.39996641874313" text="Codigo" />
+                            <TableColumn fx:id="colGruposNombres" prefWidth="158.40000915527344" text="Nombres" />
+                              <TableColumn fx:id="colGruposApellidos" prefWidth="155.199951171875" text="Apellidos" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView fitHeight="157.0" fitWidth="140.0" layoutX="312.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagen.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="cmdInformacion" layoutX="390.0" layoutY="597.0" mnemonicParsing="false" onAction="#mostrarInformacion" prefHeight="9.0" prefWidth="84.0" text="Acerca de...">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

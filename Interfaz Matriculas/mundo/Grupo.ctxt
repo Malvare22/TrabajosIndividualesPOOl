@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Grupo
+comment0.text=\r\n\ Escriba\ en\ lenguaje\ natural\ una\ descripci\u00F3n\ de\ los\ objetos\r\n\ que\ caben\ en\ el\ concepto\ de\ la\ clase\ Grupo.\r\n\ \r\n\ @author\ (Milton\ Jes\u00FAs\ Vera\ Contreras\ -\ miltonjesusvc@ufps.edu.co)\ \r\n\ @version\ Math.sin(Math.PI-Double.MIN_VALUE)\ \:)\ \r\n
+comment1.params=materia
+comment1.target=Grupo(Materia)
+comment2.params=contadorDeAlumnos
+comment2.target=void\ setContadorDeAlumnos(int)
+comment2.text=Metodo\ de\ modificaci\u00F3n\ a\ la\ propiedad\ contadorDeAlumnos
+comment3.params=
+comment3.target=int\ getContadorDeAlumnos()
+comment3.text=Metodo\ de\ acceso\ a\ la\ propiedad\ contadorDeAlumnos
+comment4.params=
+comment4.target=Materia\ getMateria()
+comment4.text=Metodo\ de\ acceso\ a\ la\ propiedad\ materia
+comment5.params=materia
+comment5.target=void\ setMateria(Materia)
+comment5.text=Metodo\ de\ modificaci\u00F3n\ a\ la\ propiedad\ materia
+numComments=6

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Universidad
+comment0.text=\r\n\ Escriba\ en\ lenguaje\ natural\ una\ descripci\u00F3n\ de\ los\ objetos\r\n\ que\ caben\ en\ el\ concepto\ de\ la\ clase\ Universidad.\r\n\ \r\n\ @author\ (Milton\ Jes\u00FAs\ Vera\ Contreras\ -\ miltonjesusvc@ufps.edu.co)\ \r\n\ @version\ Math.sin(Math.PI-Double.MIN_VALUE)\ \:)\ \r\n
+comment1.params=
+comment1.target=Universidad()
+comment2.params=nombre\ maximoDeAlumnosPorGrupo
+comment2.target=boolean\ agregarMateria(java.lang.String,\ int)
+comment3.params=codigo\ nombres\ apellidos\ edad\ promedio
+comment3.target=boolean\ agregarAlumno(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ float)
+numComments=4
